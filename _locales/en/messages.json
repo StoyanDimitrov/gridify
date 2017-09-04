@@ -3,16 +3,19 @@
     "message": "Toggleds an overlay resembling CSS grid",
     "description": "Description of the extension."
   },
-  "popup_title": {
+  "popupTitle": {
     "message": "CSS Grids",
     "description": "Заглавие на изскачащия прозорец за настройка на мрежи."
   },
-  "popup_settings_save": {
+  "popupSettingsSave": {
     "message": "Save",
     "description": ""
   },
-  "popup_settings_active": {
-    "message": "Grid enabled",
+  "popupSettingsActive": {
+    "message": "Grids enabled",
     "description": "Checkbox label toggling the grid visibility."
+  },
+  "popupGridsLabel": {
+    "message": "Available Grids"
   }
 }

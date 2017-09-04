@@ -3,16 +3,19 @@
     "message": "Показва слой върху сайта, наподобяващ решетка на CSS",
     "description": "Описание на добавката."
   },
-  "popup_title": {
+  "popupTitle": {
     "message": "Решетки на CSS",
     "description": "Заглавие на прозореца за настройка на решетките."
   },
-  "popup_settings_save": {
+  "popupSettingsSave": {
     "message": "Запазване",
     "description": ""
   },
-  "popup_settings_active": {
+  "popupSettingsActive": {
     "message": "Решетка включена",
     "description": "Етикет на отметката за превключване на решетката."
+  },
+  "popupGridsLabel": {
+    "message": "Налични решетки"
   }
 }

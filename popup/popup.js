@@ -6,8 +6,6 @@ browser.tabs.query({
     , tabUrl = new URL(tab.url)
     , grids = browser.storage.sync.get(tabUrl.hostname)
 
-  setText('.settings-save', _('popup_settings_save'))
-
   grids.then(settings => {
     const keys = Object.keys(settings)
 
@@ -15,10 +13,6 @@ browser.tabs.query({
       return
     }
     const grid = settings[keys[0]]
-
-    setText('title, h1', _('popup_title'))
-
-    setText('label[for="active"]', _('popup_settings_active'))
 
     // is active
     $('#active').checked = grid.isActive
@@ -56,13 +50,6 @@ browser.tabs.query({
   })
 })
 
-
-function setText(selector, content)
-{
-  Array.from(document.querySelectorAll(selector)).map(item => {
-    item.textContent = content
-  })
-}
 
 function $(selector)
 {
