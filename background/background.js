@@ -3,16 +3,16 @@
 /**
  * pageAction click event handler
  */
-browser.pageAction.onClicked.addListener(tab => {
+browser.pageAction.onClicked.addListener((tab) => {
   const url = new URL(tab.url)
 
   return browser.storage.sync.get(url.hostname)
-    .then(settings => {
+    .then((settings) => {
       settings[url.hostname].isActive = ! settings[url.hostname].isActive
 
       browser.storage.sync.set(settings)
     })
-  .catch(err => {
+  .catch((err) => {
     console.error(err)
   })
 })
@@ -21,11 +21,11 @@ browser.pageAction.onClicked.addListener(tab => {
 /**
  * Tab activated event handler
  */
-browser.tabs.onActivated.addListener(active => {
+browser.tabs.onActivated.addListener((active) => {
   browser.pageAction.hide(active.tabId)
 
   browser.tabs.get(active.tabId)
-    .then(tab => {
+    .then((tab) => {
       const grid = new Grid(tab)
 
       if (! grid.exists()) {
@@ -34,7 +34,7 @@ browser.tabs.onActivated.addListener(active => {
 
       grid.show()
     })
-  .catch(err => {
+  .catch((err) => {
     console.error(err)
   })
 })
@@ -66,7 +66,7 @@ console.log('storage changed:', area, changes)
     currentWindow: true,
     active: true,
   })
-    .then(tabs => {
+    .then((tabs) => {
       const tab = tabs[0]
       const grid = new Grid(tab)
 
@@ -77,7 +77,7 @@ console.log('storage changed:', area, changes)
 
       grid.show()
     })
-  .catch(err => {
+  .catch((err) => {
     console.error(err)
   })
 })
@@ -117,4 +117,4 @@ console.log('storage changed:', area, changes)
 
 // browser.storage.sync.set(settings).then(() => {
 // console.log('default settings saved')
-// }).catch(err => {console.error(err)})
+// }).catch((err) => {console.error(err)})

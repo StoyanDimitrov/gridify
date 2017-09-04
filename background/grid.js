@@ -90,7 +90,7 @@ Grid.prototype = {
       })
     .catch(err => {
       browser.pageAction.hide(this.tab.id)
-      console.error(err)
+      console.log('No grid setup for this host')
     })
   }
 }

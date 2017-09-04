@@ -1,21 +1,44 @@
 {
+  "title": {
+    "message": "CSS Grids",
+    "description": "Extension title."
+  },
   "description": {
     "message": "Toggleds an overlay resembling CSS grid",
-    "description": "Description of the extension."
+    "description": "Extension description."
   },
-  "popupTitle": {
-    "message": "CSS Grids",
-    "description": "Заглавие на изскачащия прозорец за настройка на мрежи."
-  },
-  "popupSettingsSave": {
-    "message": "Save",
-    "description": ""
-  },
-  "popupSettingsActive": {
+  "popupManagementSettingsActive": {
     "message": "Grids enabled",
     "description": "Checkbox label toggling the grid visibility."
   },
-  "popupGridsLabel": {
+  "popupManagementAvailableGridsLabel": {
     "message": "Available Grids"
+  },
+  "popupSettingsColumnsSectionTitle": {
+    "message": "Columns"
+  },
+  "popupSettingsColumnsWidthLabel": {
+    "message": "Width"
+  },
+  "popupSettingsColumnsCountLabel": {
+    "message": "Count"
+  },
+  "popupSettingsColumnsColorLabel": {
+    "message": "Color"
+  },
+  "popupSettingsGutterSectionTitle": {
+    "message": "Gutter"
+  },
+  "popupSettingsGutterWidthLabel": {
+    "message": "Width"
+  },
+  "popupSettingsBaselineSectionTitle": {
+    "message": "Baseline"
+  },
+  "popupSettingsBaselineHeightLabel": {
+    "message": "Height"
+  },
+  "popupSettingsBaselineColorLabel": {
+    "message": "Color"
   }
 }

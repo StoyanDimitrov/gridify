@@ -1,21 +1,44 @@
 {
+  "title": {
+    "message": "Решетки на CSS",
+    "description": "Наименование на добавката."
+  },
   "description": {
     "message": "Показва слой върху сайта, наподобяващ решетка на CSS",
     "description": "Описание на добавката."
   },
-  "popupTitle": {
-    "message": "Решетки на CSS",
-    "description": "Заглавие на прозореца за настройка на решетките."
-  },
-  "popupSettingsSave": {
-    "message": "Запазване",
-    "description": ""
-  },
-  "popupSettingsActive": {
+  "popupManagementSettingsActive": {
     "message": "Решетка включена",
     "description": "Етикет на отметката за превключване на решетката."
   },
-  "popupGridsLabel": {
+  "popupManagementAvailableGridsLabel": {
     "message": "Налични решетки"
+  },
+  "popupSettingsColumnsSectionTitle": {
+    "message": "Колони"
+  },
+  "popupSettingsColumnsWidthLabel": {
+    "message": "Ширина"
+  },
+  "popupSettingsColumnsCountLabel": {
+    "message": "Брой"
+  },
+  "popupSettingsColumnsColorLabel": {
+    "message": "Цвят"
+  },
+  "popupSettingsGutterSectionTitle": {
+    "message": "Отстъп"
+  },
+  "popupSettingsGutterWidthLabel": {
+    "message": "Ширина"
+  },
+  "popupSettingsBaselineSectionTitle": {
+    "message": "Междуредие"
+  },
+  "popupSettingsBaselineHeightLabel": {
+    "message": "Височина"
+  },
+  "popupSettingsBaselineColorLabel": {
+    "message": "Цвят"
   }
 }
