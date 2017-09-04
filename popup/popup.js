@@ -4,14 +4,35 @@ browser.tabs.query({
 }).then(tabs => {
   const tab = tabs[0]
     , tabUrl = new URL(tab.url)
-    , grids = browser.storage.sync.get(tabUrl.hostname)
 
-  grids.then(settings => {
+  let defaultSettings = {}
+  defaultSettings[tabUrl.hostname] = {
+      label: 'teh grid',
+      isActive: true,
+      selected: 0,
+      grids: [
+        {
+          position: 'center',
+          columnCount: 24,
+          columnWidth: 38,
+          columnColor: 'red',
+          gutterWidth: 12,
+          baselineHeight: 21,
+          baselineColor: 'blue',
+        },
+      ],
+    }
+
+  const grids = browser.storage.sync.get(defaultSettings)
+
+  grids.then((settings) => {
     const keys = Object.keys(settings)
 
     if (keys.length === 0) {
+console.log('no settings')
       return
     }
+
     const grid = settings[keys[0]]
 
     // is active
@@ -47,6 +68,8 @@ browser.tabs.query({
       grid.selected = event.target.selectedIndex
       save(settings)
     }, false)
+  }).catch((err) => {
+console.log(err)
   })
 })
 

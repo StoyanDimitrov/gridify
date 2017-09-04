@@ -2,71 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title data-l10n-id="popupTitle"></title>
+    <title data-l10n-id="title">CSS Grids</title>
     <link rel="stylesheet" href="popup.css">
   </head>
   <body>
-    <h1 data-l10n-id="popupTitle"></h1>
+    <h1 data-l10n-id="title">CSS Grids</h1>
 
     <div id="grid-management">
       <div class="browser-style">
         <input id="active" type="checkbox" value="true">
-        <label for="active" data-l10n-id="popupSettingsActive"></label>
+        <label for="active" data-l10n-id="popupManagementSettingsActive">Grids enabled</label>
       </div>
 
-      <div class="browser-style">
+      <div>
         <select id="selected" class="browser-style"></select>
       </div>
 
-      <div class="browser-style">
-        <label data-l10n-id="popupGridsLabel">Available Grids</label>
+      <div>
+        <label data-l10n-id="popupManagementAvailableGridsLabel">Available Grids</label>
         <div id="grids"></div>
+      </div>
     </div>
 
     <div id="grid-settings">
       <section>
         <header>
-          <h3>Columns</h3>
+          <h3 data-l10n-id="popupSettingsColumnsSectionTitle">Columns</h3>
         </header>
 
         <div>
-          <label for="col-width">Width</label>
+          <label for="col-width" data-l10n-id="popupSettingsColumnsWidthLabel">Width</label>
           <input type="number" id="col-width" min="1">
         </div>
         <div>
-          <label for="col-count">Count</label>
+          <label for="col-count" data-l10n-id="popupSettingsColumnsCountLabel">Count</label>
           <input type="number" id="col-count" min="1">
         </div>
         <div>
-          <label for="col-color">Color</label>
-          <input type="color" id="col-color">
+          <label for="col-color" data-l10n-id="popupSettingsColumnsColorLabel">Color</label>
+          <input type="data" id="col-color">
         </div>
       </section>
 
       <section>
         <header>
-          <h3>Gutter</h3>
+          <h3 data-l10n-id="popupSettingsGutterSectionTitle">Gutter</h3>
         </header>
 
         <div>
-          <label for="gut-width">Width</label>
-          <input type="number" id="gut-width" min="1">
+          <label for="gtr-width" data-l10n-id="popupSettingsGutterWidthLabel">Width</label>
+          <input type="number" id="gtr-width" min="1">
         </div>
       </section>
 
       <section>
         <header>
-          <h3>Baseline</h3>
+          <h3 data-l10n-id="popupSettingsBaselineSectionTitle">Baseline</h3>
         </header>
 
         <div>
-          <label for="base-width">Height</label>
+          <label for="base-width" data-l10n-id="popupSettingsBaselineHeightLabel">Height</label>
           <input type="number" id="base-width" min="1">
         </div>
-        <div>
-          <label for="base-color">Color</label>
-          <input type="color" id="base-color" min="1">
-        </div>
+        <!-- div>
+          <label for="base-color" data-l10n-id="popupSettingsBaselineColorLabel">Color</label>
+          <input type="color" id="base-color">
+        </div -->
       </section>
     </div>
 
