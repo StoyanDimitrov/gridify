@@ -14,14 +14,17 @@
   "popupManagementAvailableGridsLabel": {
     "message": "Available Grids"
   },
+  "popupSettingsLabelSectionTitle": {
+    "message": "Label"
+  },
   "popupSettingsColumnsSectionTitle": {
     "message": "Columns"
   },
   "popupSettingsColumnsWidthLabel": {
     "message": "Width"
   },
-  "popupSettingsColumnsCountLabel": {
-    "message": "Count"
+  "popupSettingsColumnsNumberLabel": {
+    "message": "Number"
   },
   "popupSettingsColumnsColorLabel": {
     "message": "Color"
@@ -40,5 +43,8 @@
   },
   "popupSettingsBaselineColorLabel": {
     "message": "Color"
+  },
+  "popupListSectionTitle": {
+    "message": "Grids List"
   }
 }

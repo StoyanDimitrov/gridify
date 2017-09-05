@@ -61,7 +61,6 @@ browser.tabs.onUpdated.addListener((tabId, change, tab) => {
  * Settings change listener
  */
 browser.storage.onChanged.addListener((changes, area) => {
-console.log('storage changed:', area, changes)
   browser.tabs.query({
     currentWindow: true,
     active: true,
@@ -84,12 +83,12 @@ console.log('storage changed:', area, changes)
 
 
 /*
-    , defaultSettings = {}
+  const defaultSettings = {}
   defaultSettings[url.hostname] = {
-    isActive: false,
-    selected: 0,
+    active: null,
     grids: [
       {
+        label: 'CMS',
         position: 'center',
         columnCount: 24,
         columnWidth: 38,
@@ -99,6 +98,7 @@ console.log('storage changed:', area, changes)
         baselineColor: 'blue',
       },
       {
+        label: 'Site',
         position: 'center',
         columnCount: 12,
         columnWidth: 84,
@@ -110,11 +110,3 @@ console.log('storage changed:', area, changes)
     ],
   }
 */
-
-
-// console.log('set default settings', settings)
-// settings = defaultSettings
-
-// browser.storage.sync.set(settings).then(() => {
-// console.log('default settings saved')
-// }).catch((err) => {console.error(err)})

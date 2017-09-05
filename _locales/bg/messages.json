@@ -8,11 +8,14 @@
     "description": "Описание на добавката."
   },
   "popupManagementSettingsActive": {
-    "message": "Решетка включена",
+    "message": "Показване на решетката",
     "description": "Етикет на отметката за превключване на решетката."
   },
   "popupManagementAvailableGridsLabel": {
     "message": "Налични решетки"
+  },
+  "popupSettingsLabelSectionTitle": {
+    "message": "Етикет"
   },
   "popupSettingsColumnsSectionTitle": {
     "message": "Колони"
@@ -20,7 +23,7 @@
   "popupSettingsColumnsWidthLabel": {
     "message": "Ширина"
   },
-  "popupSettingsColumnsCountLabel": {
+  "popupSettingsColumnsNumberLabel": {
     "message": "Брой"
   },
   "popupSettingsColumnsColorLabel": {
@@ -40,5 +43,8 @@
   },
   "popupSettingsBaselineColorLabel": {
     "message": "Цвят"
+  },
+  "popupListSectionTitle": {
+    "message": "Списък"
   }
 }
