@@ -46,5 +46,17 @@
   },
   "popupListSectionTitle": {
     "message": "Списък"
+  },
+  "popupButtonCreate": {
+    "message": "Създаване"
+  },
+  "popupButtonUpdate": {
+    "message": "Обновяване"
+  },
+  "popupButtonCancel": {
+    "message": "Отказ"
+  },
+  "popupCardManageCreateTitle": {
+    "message": "Създаване на решетка"
   }
 }

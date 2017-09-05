@@ -19,7 +19,7 @@
         </div>
 
         <footer>
-          <button id="action-add">Add</button>
+          <button id="action-add" class="browser-style">Add</button>
         </footer>
       </section>
 
@@ -33,10 +33,12 @@
     </div>
 
     <div id="grid-settings" class="card">
+      <header data-l10n-id="popupCardManageCreateTitle">Create a grid</header>
+
       <section>
         <div>
-          <label for="col-count"><h3 data-l10n-id="popupSettingsLabelSectionTitle">Label</h3></label>
-          <input type="number" id="col-count" min="1">
+          <label for="label"><h3 data-l10n-id="popupSettingsLabelSectionTitle">Label</h3></label>
+          <input id="label">
         </div>
       </section>
 
@@ -47,15 +49,15 @@
 
         <div>
           <label for="col-num" data-l10n-id="popupSettingsColumnsNumberLabel">Number</label>
-          <input type="number" id="col-num" min="1">
+          <input id="col-num" type="number" min="1">
         </div>
         <div>
           <label for="col-width" data-l10n-id="popupSettingsColumnsWidthLabel">Width</label>
-          <input type="number" id="col-width" min="1">
+          <input id="col-width" type="number" min="1">
         </div>
         <div>
           <label for="col-color" data-l10n-id="popupSettingsColumnsColorLabel">Color</label>
-          <input type="text" id="col-color">
+          <input id="col-color">
         </div>
       </section>
 
@@ -66,7 +68,7 @@
 
         <div>
           <label for="gtr-width" data-l10n-id="popupSettingsGutterWidthLabel">Width</label>
-          <input type="number" id="gtr-width" min="1">
+          <input id="gtr-width" type="number" min="1">
         </div>
       </section>
 
@@ -76,18 +78,20 @@
         </header>
 
         <div>
-          <label for="base-width" data-l10n-id="popupSettingsBaselineHeightLabel">Height</label>
-          <input type="number" id="base-width" min="1">
+          <label for="base-height" data-l10n-id="popupSettingsBaselineHeightLabel">Height</label>
+          <input id="base-height" type="number" min="1">
         </div>
         <div>
           <label for="base-color" data-l10n-id="popupSettingsBaselineColorLabel">Color</label>
-          <input type="text" id="base-color">
+          <input id="base-color">
         </div>
       </section>
-    </div>
 
-    <div id="grid-create" class="card">
-      Create new grid
+      <footer>
+        <button id="action-cancel" class="create browser-style" data-l10n-id="popupButtonCancel">Cancel</button>
+        <button id="action-create" class="create browser-style" data-l10n-id="popupButtonCreate">Create</button>
+        <button id="action-update" class="update browser-style" data-l10n-id="popupButtonUpdate">Update</button>
+      </footer>
     </div>
 
     <script src="l10n.js"></script>

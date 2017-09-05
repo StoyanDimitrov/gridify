@@ -46,5 +46,17 @@
   },
   "popupListSectionTitle": {
     "message": "Grids List"
+  },
+  "popupButtonCreate": {
+    "message": "Create"
+  },
+  "popupButtonUpdate": {
+    "message": "Update"
+  },
+  "popupButtonCancel": {
+    "message": "Cancel"
+  },
+  "popupCardManageCreateTitle": {
+    "message": "Create grid"
   }
 }
