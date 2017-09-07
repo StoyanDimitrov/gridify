@@ -44,3 +44,9 @@ button {
 .card[data-mode="create"] .create {
   display: inline-block;
 }
+.grid-item {
+  border: 1px solid silver;
+  border-radius: 2px;
+  padding: .25rem;
+  margin: .5rem 0;
+}

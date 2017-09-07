@@ -69,18 +69,23 @@ console.log('no settings')
     }, false)
 
     // selected
+
+    let div = document.createElement('div')
     grid.grids.map((item, index) => {
-      $('#selected').options[index] = new Option(item.label, index)
+      div.classList.add('grid-item')
+      div.textContent = item.label + ', ' + item.columnCount
+      $('#grid-list-list').appendChild(div)
+      // $('#selected').options[index] = new Option(item.label, index)
     })
 
     showCard('grid-list')
 
+    /*
     $('#selected').addEventListener('change', (event) => {
       grid.selected = event.target.selectedIndex
       save(settings)
     }, false)
 
-    /*
     $('#action-manage').addEventListener('click', (event) => {
       grid.grids.map((item, index) => {
         let input = document.createElement('input')
