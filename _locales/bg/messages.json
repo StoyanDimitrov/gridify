@@ -4,7 +4,7 @@
     "description": "Наименование на добавката."
   },
   "description": {
-    "message": "Показва слой върху сайта, наподобяващ решетка на CSS",
+    "message": "Показва слой с решетка върху страницата",
     "description": "Описание на добавката."
   },
   "popupManagementSettingsActive": {
