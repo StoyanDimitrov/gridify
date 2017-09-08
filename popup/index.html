@@ -6,92 +6,84 @@
     <link rel="stylesheet" href="popup.css">
   </head>
   <body>
-    <h1 data-l10n-id="title">CSS Grids</h1>
+    <div class="wrapper">
+      <!-- List -->
+      <div id="grid-list" class="card">
+        <section>
+          <div id="grid-list-items"></div>
+          <div class="browser-style">
+            <input id="active" type="checkbox" value="true">
+            <label for="active" data-l10n-id="popupManagementSettingsActive">Grids enabled</label>
+          </div>
 
-    <div id="grid-list" class="card">
-      <section>
-        <header data-l10n-id="popupListSectionTitle">Grid list</header>
+          <footer>
+            <button id="action-add" class="browser-style">Add</button>
+          </footer>
+        </section>
+      </div>
 
-        <div id="grid-list-list"></div>
-        <div class="browser-style">
-          <input id="active" type="checkbox" value="true">
-          <label for="active" data-l10n-id="popupManagementSettingsActive">Grids enabled</label>
-        </div>
+      <!-- Create / Update -->
+      <div id="grid-settings" class="card">
+        <header data-l10n-id="popupCardManageCreateTitle">Create a grid</header>
+
+        <section>
+          <div>
+            <label for="label"><h3 data-l10n-id="popupSettingsLabelSectionTitle">Label</h3></label>
+            <input id="label">
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3 data-l10n-id="popupSettingsColumnsSectionTitle">Columns</h3>
+          </header>
+
+          <div>
+            <label for="col-num" data-l10n-id="popupSettingsColumnsNumberLabel">Number</label>
+            <input id="col-num" type="number" min="1">
+          </div>
+          <div>
+            <label for="col-width" data-l10n-id="popupSettingsColumnsWidthLabel">Width</label>
+            <input id="col-width" type="number" min="1">
+          </div>
+          <div>
+            <label for="col-color" data-l10n-id="popupSettingsColumnsColorLabel">Color</label>
+            <input id="col-color" placeholder="#ffffff">
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3 data-l10n-id="popupSettingsGutterSectionTitle">Gutter</h3>
+          </header>
+
+          <div>
+            <label for="gtr-width" data-l10n-id="popupSettingsGutterWidthLabel">Width</label>
+            <input id="gtr-width" type="number" min="1">
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3 data-l10n-id="popupSettingsBaselineSectionTitle">Baseline</h3>
+          </header>
+
+          <div>
+            <label for="base-height" data-l10n-id="popupSettingsBaselineHeightLabel">Height</label>
+            <input id="base-height" type="number" min="1">
+          </div>
+          <div>
+            <label for="base-color" data-l10n-id="popupSettingsBaselineColorLabel">Color</label>
+            <input id="base-color" placeholder="#ffffff">
+          </div>
+        </section>
 
         <footer>
-          <button id="action-add" class="browser-style">Add</button>
+          <button id="action-cancel" class="create browser-style" data-l10n-id="popupButtonCancel">Cancel</button>
+          <button id="action-create" class="create browser-style" data-l10n-id="popupButtonCreate">Create</button>
+          <button id="action-update" class="update browser-style" data-l10n-id="popupButtonUpdate">Update</button>
         </footer>
-      </section>
-
-    </div>
-
-    <div id="grid-manage" class="card">
-      <div>
-        <label data-l10n-id="popupManagementAvailableGridsLabel">Available Grids</label>
-        <div id="available-grids"></div>
       </div>
-    </div>
-
-    <div id="grid-settings" class="card">
-      <header data-l10n-id="popupCardManageCreateTitle">Create a grid</header>
-
-      <section>
-        <div>
-          <label for="label"><h3 data-l10n-id="popupSettingsLabelSectionTitle">Label</h3></label>
-          <input id="label">
-        </div>
-      </section>
-
-      <section>
-        <header>
-          <h3 data-l10n-id="popupSettingsColumnsSectionTitle">Columns</h3>
-        </header>
-
-        <div>
-          <label for="col-num" data-l10n-id="popupSettingsColumnsNumberLabel">Number</label>
-          <input id="col-num" type="number" min="1">
-        </div>
-        <div>
-          <label for="col-width" data-l10n-id="popupSettingsColumnsWidthLabel">Width</label>
-          <input id="col-width" type="number" min="1">
-        </div>
-        <div>
-          <label for="col-color" data-l10n-id="popupSettingsColumnsColorLabel">Color</label>
-          <input id="col-color" placeholder="#ffffff">
-        </div>
-      </section>
-
-      <section>
-        <header>
-          <h3 data-l10n-id="popupSettingsGutterSectionTitle">Gutter</h3>
-        </header>
-
-        <div>
-          <label for="gtr-width" data-l10n-id="popupSettingsGutterWidthLabel">Width</label>
-          <input id="gtr-width" type="number" min="1">
-        </div>
-      </section>
-
-      <section>
-        <header>
-          <h3 data-l10n-id="popupSettingsBaselineSectionTitle">Baseline</h3>
-        </header>
-
-        <div>
-          <label for="base-height" data-l10n-id="popupSettingsBaselineHeightLabel">Height</label>
-          <input id="base-height" type="number" min="1">
-        </div>
-        <div>
-          <label for="base-color" data-l10n-id="popupSettingsBaselineColorLabel">Color</label>
-          <input id="base-color" placeholder="#ffffff">
-        </div>
-      </section>
-
-      <footer>
-        <button id="action-cancel" class="create browser-style" data-l10n-id="popupButtonCancel">Cancel</button>
-        <button id="action-create" class="create browser-style" data-l10n-id="popupButtonCreate">Create</button>
-        <button id="action-update" class="update browser-style" data-l10n-id="popupButtonUpdate">Update</button>
-      </footer>
     </div>
 
     <script src="l10n.js"></script>

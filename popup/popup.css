@@ -1,6 +1,12 @@
 body {
-  padding: .5rem .5rem 0 .5rem;
+  padding: 1px;
   min-width: 250px;
+  background-color: #fff;
+}
+
+.wrapper {
+  --m-background-color: silver;
+  padding: .5rem;
 }
 
 h1,
